@@ -1,11 +1,11 @@
-const close = document.querySelector(".close");
-const open = document.querySelector(".ham");
-const menu = document.querySelector(".menu");
+const closeBtn = document.getElementById("closeBtn");
+const hamBtn = document.getElementById("hamBtn");
+const menu = document.getElementById("menu");
 
-close.addEventListener("click", () => {
-    menu.style.visibility = "hidden";
+hamBtn.addEventListener("click", () => {
+    menu.style.visibility = "visible";
 });
 
-open.addEventListener("click", () => {
-    menu.style.visibility = "visible";
+closeBtn.addEventListener("click", () => {
+    menu.style.visibility = "hidden";
 });
